@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>BMI-Räknare</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-text">
+        <h1>Räkna ut ditt BMI</h1>
+      </div>
+    </header>
+
+    <section>
+      <div id="bmiInformation">
+        <span style="color: red; font-size: 30px; font-weight: bold">!</span> Viktigt att tänka på
+        när ni räknar ut ert BMI är att det enbart ska ses som ett riktvärde. <br />BMI tar inte
+        hänsyn till vad din kroppsmassa är består av, vilket gör att det ibland kan bli missvisande.
+        <span style="color: red; font-size: 30px; font-weight: bold">!</span>
+      </div>
+
+      <div id="buttons">
+        <form id="bmi">
+          <input
+            type="number"
+            step="0.1"
+            id="height"
+            name="height"
+            placeholder="Din längd i cm"
+            required
+          />
+          <input
+            type="number"
+            step="0.1"
+            id="weight"
+            name="weight"
+            placeholder="Din vikt i kg"
+            required
+          /><br />
+          <input type="submit" id="submit" value="Räkna ut" />
+        </form>
+      </div>
+
+      <div id="BMIresult"></div>
+      <div id="tabell">
+        < 18: Undervikt<br />
+        18,5-25: Normalvikt<br />
+        25-30: Övervikt<br />
+        30-35: Fetma klass 1<br />
+        35-40: Fetma klass 2<br />
+        > 40: Fetma klass 3<br /><br />
+      </div>
+      <div id="moreInfo">
+        <p>
+          Mer information kring BMI kan du läsa hos
+          <a href="https://www.aleris.se/specialistvard/overvikt/rakna-ut-ditt-bmi/">aleris.se</a>
+        </p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
